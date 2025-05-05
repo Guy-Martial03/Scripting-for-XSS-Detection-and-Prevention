@@ -41,7 +41,7 @@ This can allow the attacker to:
 **Objective**: Install Flask server.
 
  Install Flask:
-    ```bash
+    ```powershell
     pip install flask
     ```
 
@@ -50,20 +50,20 @@ This can allow the attacker to:
 **Objective**: Running Scripting_Against_XSS_App
 
  Navigate to the project directory in your terminal :
-    ```bash
+    ```powershell
     python Scripting_Against_XSS_App.py
     ```
 
-### Exercise 3: Accessing the Web Interface
+### Step 3: Accessing the Web Interface
 
 **Objective**: Web interface
 
 Once the application is running, open your web browser and navigate to the following address to access the login interface
 
- ```bash
+ ```powershell
    http://localhost:5001
-
     ```
+	
 ### Performing XSS Tests
 
 **Objective**: Demonstrating XSS Exploits
