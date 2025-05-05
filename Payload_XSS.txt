@@ -1,0 +1,23 @@
+    XSS Test Cases:
+
+→ Payload
+
+--------- Secure Mode ---------
+
+    Expected behavior in protected mode:
+ 
+Test	     Input Payload               	          Result
+1	    <script>alert('XSS')</script>	       Displayed as plain text
+2       <b>bold</b>	                           Displayed as plain text
+3	    <svg onload=alert(1)>	               Displayed as plain text
+
+--------- Unsecured Mode ---------
+
+Click the button to switch to raw (unsecured) display mode.
+
+    Expected behavior in unsecured mode:
+
+Test	    Input Payload	                           Result
+1	   <script>alert('XSS')</script>	       JavaScript alert window with the message "XSS"
+2	   <b>bold</b>	                           Text appears in bold
+3      <svg onload=alert(1)>	               JavaScript alert window showing "1" (executes alert(1))
