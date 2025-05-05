@@ -14,11 +14,8 @@ The goal is to execute malicious code in the victim's browser as if it originate
 This can allow the attacker to:
 
 - Steal session cookies or other sensitive data
-
 - Impersonate a logged-in user
-
 - Perform actions on behalf of the user (e.g., form submission, clicks)
-
 - Redirect the user to a malicious website
 
 ## Pre-requisites
@@ -41,7 +38,7 @@ This can allow the attacker to:
 **Objective**: Install Flask server.
 
  Install Flask:
-    ```powershell
+    ```
     pip install flask
     ```
 
@@ -50,7 +47,7 @@ This can allow the attacker to:
 **Objective**: Running Scripting_Against_XSS_App
 
  Navigate to the project directory in your terminal :
-    ```powershell
+    ```
     python Scripting_Against_XSS_App.py
     ```
 
@@ -60,8 +57,8 @@ This can allow the attacker to:
 
 Once the application is running, open your web browser and navigate to the following address to access the login interface
 
- ```powershell
-   http://localhost:5001
+    ```
+    http://localhost:5001
     ```
 	
 ### Performing XSS Tests
